@@ -1,0 +1,241 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Fonts/SigmarOne-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Sprites/UI/exit_pressed.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Items/BLANK_COIN.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Backgrounds/sky_background_mountains.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/GameOver.gd" type="Script" id=5]
+[ext_resource path="res://Sprites/Items/RING.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Items/gold_star.png" type="Texture" id=7]
+[ext_resource path="res://Sound/background.wav" type="AudioStream" id=8]
+[ext_resource path="res://Sprites/UI/playagain_pressed.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/UI/playagain_normal.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/UI/exit_normal.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/UI/share_normal.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/UI/share_pressed.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/UI/home_pressed.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/UI/home_normal.png" type="Texture" id=15]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=4]
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Coins:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Rings:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( -0.1, 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Stars:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Score:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[node name="GameOver" type="Node"]
+script = ExtResource( 5 )
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="BackgroundColor" type="TextureRect" parent="Background"]
+margin_right = 2048.0
+margin_bottom = 1536.0
+rect_scale = Vector2( 0.5, 0.375 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleLabel" type="Label" parent="."]
+margin_left = 272.553
+margin_top = 2.82959
+margin_right = 743.553
+margin_bottom = 167.83
+custom_fonts/font = SubResource( 1 )
+text = "AFLOAT"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayAgainButton" type="TextureButton" parent="."]
+margin_left = 47.7517
+margin_top = 297.785
+margin_right = 412.752
+margin_bottom = 481.785
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitButton" type="TextureButton" parent="."]
+margin_left = 604.061
+margin_top = 300.785
+margin_right = 969.061
+margin_bottom = 484.785
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Coins" type="TextureRect" parent="."]
+margin_left = 58.8963
+margin_top = 177.311
+margin_right = 123.896
+margin_bottom = 242.311
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CoinsScore" type="Label" parent="Coins"]
+margin_left = 76.842
+margin_top = -22.1052
+margin_right = 120.842
+margin_bottom = 76.8948
+custom_fonts/font = SubResource( 2 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rings" type="TextureRect" parent="."]
+margin_left = 244.896
+margin_top = 177.311
+margin_right = 309.896
+margin_bottom = 242.311
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RingsScore" type="Label" parent="Rings"]
+margin_left = 76.842
+margin_top = -22.1052
+margin_right = 120.842
+margin_bottom = 76.8948
+custom_fonts/font = SubResource( 2 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stars" type="TextureRect" parent="."]
+margin_left = 438.896
+margin_top = 177.311
+margin_right = 503.896
+margin_bottom = 242.311
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StarsScore" type="Label" parent="Stars"]
+margin_left = 76.842
+margin_top = -22.1052
+margin_right = 120.842
+margin_bottom = 76.8948
+custom_fonts/font = SubResource( 2 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="."]
+margin_left = 639.79
+margin_top = 157.226
+margin_right = 730.79
+margin_bottom = 256.226
+custom_fonts/font = SubResource( 3 )
+text = "= 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/default = SubResource( 4 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
+volume_db = -15.0
+autoplay = true
+
+[node name="ShareButton" type="TouchScreenButton" parent="."]
+visible = false
+position = Vector2( 474.77, 353.697 )
+scale = Vector2( 0.408358, 0.408358 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 13 )
+
+[node name="Home" type="TouchScreenButton" parent="."]
+position = Vector2( 473.41, 395.868 )
+scale = Vector2( 0.400324, 0.400324 )
+normal = ExtResource( 15 )
+pressed = ExtResource( 14 )
+[connection signal="pressed" from="PlayAgainButton" to="." method="_on_PlayAgainButton_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="pressed" from="ShareButton" to="." method="_on_ShareButton_pressed"]
+[connection signal="pressed" from="Home" to="." method="_on_Home_pressed"]

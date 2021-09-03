@@ -1,0 +1,237 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Scenes/Transition.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Enemies/Level1Spawner.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Enemies/PillsSpawner.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Sprites/UI/pause_pressed.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Items/gold_wings.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/Items/FeatherSpawner.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/JetpackPlayer.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scripts/Game.gd" type="Script" id=12]
+[ext_resource path="res://Scenes/Items/ScoreSpawner.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Items/BoostSpawner.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Items/UpgradedBoostSpawner.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Fonts/SigmarOne-Regular.ttf" type="DynamicFontData" id=16]
+[ext_resource path="res://Sprites/Items/BLANK_COIN.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Items/RING.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Items/gold_star.png" type="Texture" id=19]
+[ext_resource path="res://admob-lib/admob.gd" type="Script" id=20]
+[ext_resource path="res://Sprites/UI/pause_normal.png" type="Texture" id=21]
+[ext_resource path="res://Scripts/PausePop.gd" type="Script" id=22]
+[ext_resource path="res://Sprites/UI/home_pressed.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/UI/home_normal.png" type="Texture" id=24]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 35
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 200
+outline_size = 10
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 16 )
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 12 )
+
+[node name="Transition" parent="." instance=ExtResource( 1 )]
+
+[node name="JetpackPlayer" parent="." instance=ExtResource( 11 )]
+position = Vector2( -233.897, -283.233 )
+
+[node name="ScoreTimer" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="FlapIcon" type="TextureRect" parent="HUD"]
+margin_left = 706.669
+margin_top = 18.5758
+margin_right = 1345.67
+margin_bottom = 495.576
+rect_scale = Vector2( 0.106091, 0.106091 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Flaps" type="Label" parent="HUD"]
+margin_left = 786.0
+margin_top = -9.0
+margin_right = 830.0
+margin_bottom = 90.0
+custom_fonts/font = SubResource( 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="HUD"]
+margin_left = 58.6571
+margin_top = -12.7833
+margin_right = 102.657
+margin_bottom = 86.2167
+custom_fonts/font = SubResource( 2 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Highscore" type="Label" parent="HUD"]
+margin_left = 60.6571
+margin_top = 57.2167
+margin_right = 104.657
+margin_bottom = 156.217
+custom_fonts/font = SubResource( 3 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CoinScore" type="TextureRect" parent="HUD"]
+margin_left = 60.0164
+margin_top = 116.877
+margin_right = 316.016
+margin_bottom = 372.877
+rect_scale = Vector2( 0.125506, 0.125506 )
+texture = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Coins" type="Label" parent="HUD/CoinScore"]
+margin_left = 301.206
+margin_top = -45.9466
+margin_right = 447.206
+margin_bottom = 283.053
+custom_fonts/font = SubResource( 4 )
+text = "0"
+
+[node name="RingScore" type="TextureRect" parent="HUD"]
+margin_left = 145.016
+margin_top = 116.877
+margin_right = 401.016
+margin_bottom = 372.877
+rect_scale = Vector2( 0.125506, 0.125506 )
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rings" type="Label" parent="HUD/RingScore"]
+margin_left = 301.206
+margin_top = -45.9466
+margin_right = 447.206
+margin_bottom = 283.053
+custom_fonts/font = SubResource( 4 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StarScore" type="TextureRect" parent="HUD"]
+margin_left = 227.016
+margin_top = 116.877
+margin_right = 801.016
+margin_bottom = 672.877
+rect_scale = Vector2( 0.0559151, 0.0559151 )
+texture = ExtResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stars" type="Label" parent="HUD/StarScore"]
+margin_left = 666.214
+margin_top = -143.06
+margin_right = 812.214
+margin_bottom = 185.94
+rect_scale = Vector2( 2.75662, 2.42449 )
+custom_fonts/font = SubResource( 4 )
+text = "0"
+
+[node name="PauseButton" type="TouchScreenButton" parent="HUD"]
+position = Vector2( 940.452, 16.9112 )
+scale = Vector2( 0.326874, 0.326874 )
+normal = ExtResource( 21 )
+pressed = ExtResource( 8 )
+action = "pause"
+
+[node name="PausePop" type="Popup" parent="HUD"]
+pause_mode = 2
+margin_right = 1024.0
+margin_bottom = 576.0
+script = ExtResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Filter" type="ColorRect" parent="HUD/PausePop"]
+margin_right = 1024.0
+margin_bottom = 576.0
+color = Color( 0, 0, 0, 0.52549 )
+
+[node name="PausedLabel" type="Label" parent="HUD/PausePop"]
+margin_left = 372.677
+margin_top = 137.093
+margin_right = 666.677
+margin_bottom = 236.093
+custom_fonts/font = SubResource( 5 )
+text = "PAUSED"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Unpause" type="TouchScreenButton" parent="HUD/PausePop"]
+position = Vector2( 435.011, 250.661 )
+normal = ExtResource( 8 )
+pressed = ExtResource( 21 )
+action = "pause"
+
+[node name="Home" type="TouchScreenButton" parent="HUD/PausePop"]
+position = Vector2( 484.563, 445.567 )
+scale = Vector2( 0.478645, 0.478645 )
+normal = ExtResource( 24 )
+pressed = ExtResource( 23 )
+
+[node name="Admob" type="Node" parent="."]
+script = ExtResource( 20 )
+is_real = true
+banner_on_top = false
+banner_id = "ca-app-pub-4056098139575656/5732543648"
+interstitial_id = "ca-app-pub-4056098139575656/1793298631"
+
+[node name="Level1Spawner" parent="." instance=ExtResource( 6 )]
+
+[node name="PillsSpawner" parent="." instance=ExtResource( 7 )]
+
+[node name="BoostSpawner" parent="." instance=ExtResource( 14 )]
+
+[node name="FeatherSpawner" parent="." instance=ExtResource( 10 )]
+
+[node name="ScoreSpawner" parent="." instance=ExtResource( 13 )]
+
+[node name="UpradedBoostSpawner" parent="." instance=ExtResource( 15 )]
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_ScoreTimer_timeout"]
+[connection signal="pressed" from="HUD/PausePop/Home" to="." method="_on_Home_pressed"]
+[connection signal="banner_failed_to_load" from="Admob" to="." method="_on_Admob_banner_failed_to_load"]
+[connection signal="interstitial_failed_to_load" from="Admob" to="." method="_on_Admob_interstitial_failed_to_load"]

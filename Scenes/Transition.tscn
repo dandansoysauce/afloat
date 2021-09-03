@@ -1,0 +1,123 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Sprites/Backgrounds/Parallax/mid_ground_cloud_1.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Transition.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/Backgrounds/Parallax/mid_ground_cloud_2.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Backgrounds/Parallax/mountains/farground_mountains.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Backgrounds/Parallax/mountains/midground_mountains.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Backgrounds/Parallax/mountains/foreground_mountains.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Backgrounds/_08_clouds.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Backgrounds/_10_distant_clouds.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Backgrounds/_09_distant_clouds1.png" type="Texture" id=9]
+
+[sub_resource type="Animation" id=1]
+resource_name = "default"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorParallax/ColorLayer/GameColor:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.105882, 0.819608, 1, 1 ), Color( 0.105882, 0.819608, 1, 1 ) ]
+}
+
+[node name="Transition" type="Node"]
+script = ExtResource( 2 )
+
+[node name="StartingParallax" type="ParallaxBackground" parent="."]
+layer = -99
+
+[node name="FarcloudsLayer" type="ParallaxLayer" parent="StartingParallax"]
+motion_scale = Vector2( 1.2, 1 )
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="Farclouds" type="Sprite" parent="StartingParallax/FarcloudsLayer"]
+position = Vector2( 0, -269.712 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="MidcloudsLayer" type="ParallaxLayer" parent="StartingParallax"]
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="Midclouds" type="Sprite" parent="StartingParallax/MidcloudsLayer"]
+position = Vector2( 0, 145.524 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="FargroundsLayer" type="ParallaxLayer" parent="StartingParallax"]
+motion_scale = Vector2( 0.8, 1 )
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="Fargrounds" type="Sprite" parent="StartingParallax/FargroundsLayer"]
+position = Vector2( 0, 246 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="MidgroundsLayer" type="ParallaxLayer" parent="StartingParallax"]
+motion_scale = Vector2( 0.6, 1 )
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="Midgrounds" type="Sprite" parent="StartingParallax/MidgroundsLayer"]
+position = Vector2( 0, 457 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="ForegroundsLayer" type="ParallaxLayer" parent="StartingParallax"]
+motion_scale = Vector2( 0.4, 1 )
+motion_mirroring = Vector2( 2048, 0 )
+
+[node name="Foregrounds" type="Sprite" parent="StartingParallax/ForegroundsLayer"]
+position = Vector2( 0, 467 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="CloudsParallax" type="ParallaxBackground" parent="."]
+layer = -99
+
+[node name="CloudsLayer1" type="ParallaxLayer" parent="CloudsParallax"]
+motion_scale = Vector2( 1.4, 1.4 )
+motion_mirroring = Vector2( 2048, 800 )
+
+[node name="Farclouds" type="Sprite" parent="CloudsParallax/CloudsLayer1"]
+position = Vector2( 1019.61, 434.324 )
+texture = ExtResource( 7 )
+
+[node name="CloudsLayer2" type="ParallaxLayer" parent="CloudsParallax"]
+motion_scale = Vector2( 1.6, 1.6 )
+motion_mirroring = Vector2( 2048, 800 )
+
+[node name="Midclouds" type="Sprite" parent="CloudsParallax/CloudsLayer2"]
+position = Vector2( 1019.61, 434.324 )
+texture = ExtResource( 9 )
+
+[node name="CloudsLayer3" type="ParallaxLayer" parent="CloudsParallax"]
+motion_scale = Vector2( 1.8, 1.8 )
+motion_mirroring = Vector2( 2048, 800 )
+
+[node name="Foreclouds" type="Sprite" parent="CloudsParallax/CloudsLayer3"]
+position = Vector2( 1019.61, 434.324 )
+texture = ExtResource( 8 )
+
+[node name="ColorParallax" type="ParallaxBackground" parent="."]
+
+[node name="ColorLayer" type="ParallaxLayer" parent="ColorParallax"]
+z_index = -1
+motion_mirroring = Vector2( 1024, 576 )
+
+[node name="GameColor" type="ColorRect" parent="ColorParallax/ColorLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1024.0
+margin_bottom = 576.0
+color = Color( 0.105882, 0.819608, 1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/default = SubResource( 1 )

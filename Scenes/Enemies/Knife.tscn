@@ -1,0 +1,85 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Sound/sharp.wav" type="AudioStream" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node2D
+
+var speed = 200
+var velocity : Vector2 = Vector2()
+onready var player = get_tree().get_root().get_node(\"Game/JetpackPlayer\")
+
+func _ready():
+	$AnimationPlayer.play(\"default\")
+
+func _process(delta):
+	move_local_x(-delta * speed)
+	
+	if (position.x < player.get_position().x - 1024 and is_instance_valid(self)):
+		queue_free()
+
+func _on_Area2D_body_entered(_body):
+	$AudioStreamPlayer2D.play()
+	_body.velocity.y += Constants.GRAVITY / 2 * 1
+	_body.move_and_slide(_body.velocity)
+	hide()
+"
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/knife.png-658a6494628375010d58fb43210312de.stex"
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 12.0198, 33.0198 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "default"
+length = 3.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 360.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Area2D/CollisionShape2D:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 360.0 ]
+}
+
+[node name="Knife" type="Node2D"]
+scale = Vector2( 0.987325, 1 )
+script = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = 4.02682
+scale = Vector2( 0.214083, 0.214083 )
+texture = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+rotation = 4.02682
+shape = SubResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/default = SubResource( 4 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

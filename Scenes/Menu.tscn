@@ -1,0 +1,115 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Fonts/SigmarOne-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Sprites/UI/exit_pressed.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/UI/f.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Backgrounds/sky_background_mountains.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=5]
+[ext_resource path="res://Sprites/UI/play_pressed.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/UI/play_normal.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/UI/exit_normal.png" type="Texture" id=8]
+[ext_resource path="res://Sound/background.wav" type="AudioStream" id=9]
+[ext_resource path="res://admob-lib/admob.gd" type="Script" id=10]
+[ext_resource path="res://Sprites/UI/games_normal.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/UI/games_pressed.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/UI/leader_pressed.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/UI/leader_normal.png" type="Texture" id=14]
+
+[sub_resource type="DynamicFont" id=1]
+size = 280
+outline_size = 20
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="Menu" type="Node"]
+script = ExtResource( 5 )
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="BackgroundColor" type="TextureRect" parent="Background"]
+margin_right = 2048.0
+margin_bottom = 1536.0
+rect_scale = Vector2( 0.5, 0.375 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="TextureRect" parent="."]
+margin_left = 265.454
+margin_top = 25.6934
+margin_right = 1865.45
+margin_bottom = 1195.69
+rect_scale = Vector2( 0.3, 0.2 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleLabel" type="Label" parent="Title"]
+margin_left = 94.9556
+margin_top = 89.6667
+margin_right = 1506.96
+margin_bottom = 1031.67
+custom_fonts/font = SubResource( 1 )
+text = "AFLOAT"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" type="TextureButton" parent="."]
+margin_left = 383.0
+margin_top = 283.0
+margin_right = 1030.0
+margin_bottom = 655.0
+rect_scale = Vector2( 0.387241, 0.387241 )
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitButton" type="TextureButton" parent="."]
+margin_left = 424.0
+margin_top = 445.0
+margin_right = 1071.0
+margin_bottom = 817.0
+rect_scale = Vector2( 0.264829, 0.264829 )
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -15.0
+autoplay = true
+
+[node name="Admob" type="Node" parent="."]
+script = ExtResource( 10 )
+is_real = true
+banner_on_top = false
+banner_id = "ca-app-pub-4056098139575656/5732543648"
+interstitial_id = "ca-app-pub-4056098139575656/1793298631"
+
+[node name="Login" type="TouchScreenButton" parent="."]
+position = Vector2( 907.232, 473.001 )
+scale = Vector2( 0.355507, 0.355507 )
+normal = ExtResource( 11 )
+pressed = ExtResource( 12 )
+
+[node name="Leaderboards" type="TouchScreenButton" parent="."]
+position = Vector2( 907.232, 393.001 )
+scale = Vector2( 0.355507, 0.355507 )
+normal = ExtResource( 14 )
+pressed = ExtResource( 13 )
+[connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="banner_loaded" from="Admob" to="." method="_on_Admob_banner_loaded"]
+[connection signal="pressed" from="Login" to="." method="_on_Login_pressed"]
+[connection signal="pressed" from="Leaderboards" to="." method="_on_Leaderboards_pressed"]

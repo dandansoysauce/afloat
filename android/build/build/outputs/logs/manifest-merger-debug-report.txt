@@ -1,0 +1,354 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:68:7-76:18
+	android:grantUriPermissions
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:70:11-45
+	android:authorities
+		INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:72:11-49
+	android:exported
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:71:11-35
+	android:name
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:69:11-60
+manifest
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:2:1-83:12
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:2:1-83:12
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:2:1-83:12
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:2:1-83:12
+MERGED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.android.gms:play-services-ads:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7edaea8f9db9b5f59b714a798e72c1be/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/507e05a968829736e08db947b8058661/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/2c60a0c45c255960241bb206033a6a00/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-games:19.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e7430176c019c0451b5c9106cd69d784/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/b1cb1823c04c21f3054ddfa4a424f242/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.android.gms:play-services-gass:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/2071181f3a2a424b9dfcce018627b355/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-drive:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7d48efb59f011e3f1a323f6fe55faad1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/d14a23a52da985987b34344d38879ada/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/af2819f2eb364c5bb3501314d9b1bd82/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca6eb0f22ce7f5b5559c3a6a4f33836/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/f58f4b7cf0e2d3661ff00aca73783d01/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7c4f8302399e2ec1c202ae8df753053c/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/239da95d492daab942a454e1b154c0aa/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/1c77e489ee4c0e4195abb1d85009d490/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/4eb97581073c5328ac56bc9630de1ceb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-ads-base:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/8a1632cea775eff4668729309dca77d7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e7fd7b5e5f7733534e9696e69118cb3a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7fca583f7c631540236dc31cf14d7177/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/f76b59ac27554c801b1227e244843bb1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e75ef34d16deb0fe65aa318caa9a6e7a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/75c1a5b2678c82e8c26e3fd243159d18/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/3aa84cbb3bdc66ad62d32df654cdfe7d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/a13564603921faa9b56e932c0f37769b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/54effc200408c56a18cd5dc52941a846/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/41aa1e2d151448a0ca9be35d6ace72ff/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/a43b138692b46e3729f60937faea0bc9/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/431b5930fed22aedc950bf551f001141/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7e30ade20fcce81f3613b89eac0df502/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/ad4668b409c6dead2dd4437505f269ed/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/d5ca7525c203cb3522ab7bab1d18f06c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/3785e16adde6fba002de7589cc8cd38f/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/6604103db9bd1eaa88d984bb04e13573/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e8cbc3a0b586f3de10493f22e7a6d8bc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/197987eda2afc71173c29d234a568231/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/4d48d6227370d1f40bd823bc32f27542/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/330328ff5e75c9048d5006f719ccfd61/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/983a2b02e0f0da04ac5ce114117dc570/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:2:1-83:12
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:2:1-83:12
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:2:1-83:12
+	package
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:4:5-29
+		INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+		INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:6:5-30
+		INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+		INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:5:5-28
+		INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+		INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+	android:installLocation
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:7:5-35
+supports-screens
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:12:5-16:40
+	android:largeScreens
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:15:9-36
+	android:smallScreens
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:13:9-36
+	android:normalScreens
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:14:9-37
+	android:xlargeScreens
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:16:9-37
+uses-feature#0x00020000
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:19:5-21:35
+	android:glEsVersion
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:20:9-41
+	android:required
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:21:9-32
+application
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:30:5-81:19
+MERGED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:17:5-19:19
+MERGED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:17:5-19:19
+MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-games:19.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e7430176c019c0451b5c9106cd69d784/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-games:19.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e7430176c019c0451b5c9106cd69d784/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/b1cb1823c04c21f3054ddfa4a424f242/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/b1cb1823c04c21f3054ddfa4a424f242/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-gass:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/2071181f3a2a424b9dfcce018627b355/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-gass:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/2071181f3a2a424b9dfcce018627b355/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-drive:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7d48efb59f011e3f1a323f6fe55faad1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7d48efb59f011e3f1a323f6fe55faad1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca6eb0f22ce7f5b5559c3a6a4f33836/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca6eb0f22ce7f5b5559c3a6a4f33836/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/f58f4b7cf0e2d3661ff00aca73783d01/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/f58f4b7cf0e2d3661ff00aca73783d01/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7c4f8302399e2ec1c202ae8df753053c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7c4f8302399e2ec1c202ae8df753053c/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-ads-base:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/8a1632cea775eff4668729309dca77d7/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-base:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/8a1632cea775eff4668729309dca77d7/AndroidManifest.xml:22:5-20
+MERGED from [androidx.core:core:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/a43b138692b46e3729f60937faea0bc9/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/a43b138692b46e3729f60937faea0bc9/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/3785e16adde6fba002de7589cc8cd38f/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/3785e16adde6fba002de7589cc8cd38f/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/a43b138692b46e3729f60937faea0bc9/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:30:18-67
+	tools:ignore
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:30:96-135
+	android:icon
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:30:136-163
+	android:allowBackup
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:30:68-95
+meta-data#xr_mode_metadata_name
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:36:9-38:54
+	android:value
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:38:13-51
+	android:name
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:37:13-49
+activity#com.godot.game.GodotApp
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:40:9-54:20
+	android:screenOrientation
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:45:13-50
+	android:label
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:42:13-62
+	android:launchMode
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:44:13-44
+	android:resizeableActivity
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:47:13-47
+	tools:ignore
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:48:13-43
+	android:configChanges
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:46:13-141
+	android:theme
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:43:13-77
+	android:name
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:41:13-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:50:13-53:29
+action#android.intent.action.MAIN
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:51:17-69
+	android:name
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:51:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:52:17-77
+	android:name
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:52:27-74
+activity#com.google.android.gms.ads.AdActivity
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:58:2-59:114
+MERGED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:29:9-33:64
+MERGED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:29:9-33:64
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:32:13-37
+	android:configChanges
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:59:3-112
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:33:13-61
+	android:name
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:58:12-64
+meta-data#com.google.android.gms.version
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:60:2-61:59
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7c4f8302399e2ec1c202ae8df753053c/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7c4f8302399e2ec1c202ae8df753053c/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:61:3-56
+	android:name
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:60:13-58
+meta-data#com.google.android.gms.ads.APPLICATION_ID
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:62:5-64:59
+	android:value
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:64:3-57
+	android:name
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:63:3-59
+meta-data#com.google.android.gms.ads.AD_MANAGER_APP
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:65:2-67:31
+	android:value
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:67:9-29
+	android:name
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:66:9-65
+meta-data#com.google.android.gms.games.APP_ID
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:77:2-78:36
+	android:value
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:78:3-33
+	android:name
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:77:13-63
+uses-sdk
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+MERGED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:7:5-9:41
+MERGED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-ads:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7edaea8f9db9b5f59b714a798e72c1be/AndroidManifest.xml:21:5-23:52
+MERGED from [com.google.android.gms:play-services-ads:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7edaea8f9db9b5f59b714a798e72c1be/AndroidManifest.xml:21:5-23:52
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/507e05a968829736e08db947b8058661/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/507e05a968829736e08db947b8058661/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/2c60a0c45c255960241bb206033a6a00/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/2c60a0c45c255960241bb206033a6a00/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-games:19.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e7430176c019c0451b5c9106cd69d784/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-games:19.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e7430176c019c0451b5c9106cd69d784/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/b1cb1823c04c21f3054ddfa4a424f242/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/b1cb1823c04c21f3054ddfa4a424f242/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gass:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/2071181f3a2a424b9dfcce018627b355/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-gass:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/2071181f3a2a424b9dfcce018627b355/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-drive:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7d48efb59f011e3f1a323f6fe55faad1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-drive:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7d48efb59f011e3f1a323f6fe55faad1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/d14a23a52da985987b34344d38879ada/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/d14a23a52da985987b34344d38879ada/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/af2819f2eb364c5bb3501314d9b1bd82/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/af2819f2eb364c5bb3501314d9b1bd82/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca6eb0f22ce7f5b5559c3a6a4f33836/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca6eb0f22ce7f5b5559c3a6a4f33836/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/f58f4b7cf0e2d3661ff00aca73783d01/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/f58f4b7cf0e2d3661ff00aca73783d01/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7c4f8302399e2ec1c202ae8df753053c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7c4f8302399e2ec1c202ae8df753053c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/239da95d492daab942a454e1b154c0aa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/239da95d492daab942a454e1b154c0aa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/1c77e489ee4c0e4195abb1d85009d490/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/1c77e489ee4c0e4195abb1d85009d490/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/4eb97581073c5328ac56bc9630de1ceb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/4eb97581073c5328ac56bc9630de1ceb/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-base:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/8a1632cea775eff4668729309dca77d7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-base:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/8a1632cea775eff4668729309dca77d7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e7fd7b5e5f7733534e9696e69118cb3a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e7fd7b5e5f7733534e9696e69118cb3a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7fca583f7c631540236dc31cf14d7177/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7fca583f7c631540236dc31cf14d7177/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/f76b59ac27554c801b1227e244843bb1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/f76b59ac27554c801b1227e244843bb1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e75ef34d16deb0fe65aa318caa9a6e7a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e75ef34d16deb0fe65aa318caa9a6e7a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/75c1a5b2678c82e8c26e3fd243159d18/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/75c1a5b2678c82e8c26e3fd243159d18/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/3aa84cbb3bdc66ad62d32df654cdfe7d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/3aa84cbb3bdc66ad62d32df654cdfe7d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/a13564603921faa9b56e932c0f37769b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/a13564603921faa9b56e932c0f37769b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/54effc200408c56a18cd5dc52941a846/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/54effc200408c56a18cd5dc52941a846/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/41aa1e2d151448a0ca9be35d6ace72ff/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/41aa1e2d151448a0ca9be35d6ace72ff/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/a43b138692b46e3729f60937faea0bc9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/a43b138692b46e3729f60937faea0bc9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/431b5930fed22aedc950bf551f001141/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/431b5930fed22aedc950bf551f001141/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7e30ade20fcce81f3613b89eac0df502/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7e30ade20fcce81f3613b89eac0df502/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/ad4668b409c6dead2dd4437505f269ed/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/ad4668b409c6dead2dd4437505f269ed/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/d5ca7525c203cb3522ab7bab1d18f06c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/d5ca7525c203cb3522ab7bab1d18f06c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/3785e16adde6fba002de7589cc8cd38f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/3785e16adde6fba002de7589cc8cd38f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/6604103db9bd1eaa88d984bb04e13573/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/6604103db9bd1eaa88d984bb04e13573/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e8cbc3a0b586f3de10493f22e7a6d8bc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/e8cbc3a0b586f3de10493f22e7a6d8bc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/197987eda2afc71173c29d234a568231/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/197987eda2afc71173c29d234a568231/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/4d48d6227370d1f40bd823bc32f27542/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/4d48d6227370d1f40bd823bc32f27542/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/330328ff5e75c9048d5006f719ccfd61/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/330328ff5e75c9048d5006f719ccfd61/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/983a2b02e0f0da04ac5ce114117dc570/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/983a2b02e0f0da04ac5ce114117dc570/AndroidManifest.xml:20:5-44
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.google.android.gms:play-services-ads:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7edaea8f9db9b5f59b714a798e72c1be/AndroidManifest.xml:23:9-49
+	android:targetSdkVersion
+		INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+		INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+		INJECTED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:73:11-75:60
+	android:resource
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:75:15-58
+	android:name
+		ADDED from /home/dani/godot/dontletmefall/android/build/AndroidManifest.xml:74:15-65
+instrumentation
+ADDED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:11:5-15:57
+	android:label
+		ADDED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:14:9-58
+	android:icon
+		ADDED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:13:9-36
+	android:targetPackage
+		ADDED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:15:9-54
+	android:name
+		ADDED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:12:9-45
+service#org.godotengine.godot.GodotDownloaderService
+ADDED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:18:9-80
+	android:name
+		ADDED from [godot-lib.debug.aar] /home/dani/.gradle/caches/transforms-2/files-2.1/5e1783250abaac7c7b9d285ca90d9470/AndroidManifest.xml:18:18-77
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/5b5e394361966ce6f76bae46ad5174ed/AndroidManifest.xml:34:13-89
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:23:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:16.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca33d231f8499f9f1ac5cefaebad7df/AndroidManifest.xml:24:22-76
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca6eb0f22ce7f5b5559c3a6a4f33836/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca6eb0f22ce7f5b5559c3a6a4f33836/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca6eb0f22ce7f5b5559c3a6a4f33836/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/dani/.gradle/caches/transforms-2/files-2.1/7ca6eb0f22ce7f5b5559c3a6a4f33836/AndroidManifest.xml:24:13-79
