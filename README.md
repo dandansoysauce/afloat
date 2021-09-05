@@ -1,0 +1,1 @@
+# Afloat - a simple infinite flyer game, made in Godot.
